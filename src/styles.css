@@ -12,11 +12,4 @@
 
 body {
   font-family: var(--font-family);
-  margin: 0;
-  /* Use PrimeUI design tokens via Tailwind classes */
-  @apply bg-surface-0 text-surface-900 transition-colors duration-200;
-}
-
-.app-dark body {
-  @apply bg-surface-950 text-surface-0;
 }
