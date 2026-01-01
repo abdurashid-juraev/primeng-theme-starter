@@ -1,0 +1,12 @@
+node_modules
+dist
+coverage
+.angular
+.cache
+
+*.svg
+*.min.css
+*.min.js
+
+# Generated
+**/*.spec.ts
