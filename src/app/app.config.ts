@@ -8,6 +8,9 @@ import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 
 const MyPreset = definePreset(Aura, {
+  primitive: {
+    white: '#ffffff',
+  },
   semantic: {
     primary: {
       50: '{red.50}',
@@ -24,8 +27,20 @@ const MyPreset = definePreset(Aura, {
     },
     colorScheme: {
       light: {
+        primary: {
+          color: '{red.500}',
+          contrastColor: '{white}',
+          hoverColor: '{red.600}',
+          activeColor: '{red.700}',
+        },
+        focusRing: {
+          color: '{emerald.500}',
+        },
+        formField: {
+          focusBorderColor: '{emerald.500}',
+        },
         surface: {
-          0: '#ffffff',
+          0: '{white}',
           50: '{slate.50}',
           100: '{slate.100}',
           200: '{slate.200}',
@@ -40,8 +55,20 @@ const MyPreset = definePreset(Aura, {
         },
       },
       dark: {
+        primary: {
+          color: '{red.500}',
+          contrastColor: '{white}',
+          hoverColor: '{red.600}',
+          activeColor: '{red.700}',
+        },
+        focusRing: {
+          color: '{emerald.500}',
+        },
+        formField: {
+          focusBorderColor: '{emerald.500}',
+        },
         surface: {
-          0: '#ffffff',
+          0: '{white}',
           50: '{slate.50}',
           100: '{slate.100}',
           200: '{slate.200}',
